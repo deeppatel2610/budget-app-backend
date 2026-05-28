@@ -18,12 +18,7 @@ app.use(compression());
 
 // Strict Production-Ready CORS configuration
 const corsOptions = {
-  origin:
-    process.env.NODE_ENV === "production"
-      ? process.env.CORS_ORIGIN
-        ? process.env.CORS_ORIGIN.split(",")
-        : false
-      : "*",
+  origin: process.env.CORS_ORIGIN ? process.env.CORS_ORIGIN.split(",") : "*",
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
