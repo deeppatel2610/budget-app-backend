@@ -1,5 +1,8 @@
 const express = require("express");
 const app = express();
+
+// Trust proxy for Render load balancers and rate limiting
+app.set("trust proxy", 1);
 const cors = require("cors");
 const helmet = require("helmet");
 const compression = require("compression");
