@@ -5,7 +5,7 @@ const initializeDatabase = require("./src/config/dbInit");
 // Auto-initialize database schema if tables don't exist
 initializeDatabase();
 
-app.listen(envVariables.PORT, () => {
+app.listen(envVariables.PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${envVariables.PORT}`);
   console.log(`Swagger documentation: http://localhost:${envVariables.PORT}/api-docs/`);
 });
