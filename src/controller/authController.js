@@ -1,6 +1,6 @@
 const sendResponse = require("../utils/sendResponse");
 const AuthModel = require("../model/authModel");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const {
   generateAccessToken,
   generateRefreshToken,

@@ -3,7 +3,7 @@ const AuthModel = require("./src/model/authModel");
 const CategoryModel = require("./src/model/categoryModel");
 const TransactionModel = require("./src/model/transactionModel");
 const BudgetModel = require("./src/model/budgetModel");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const {
   generateAccessToken,
   generateRefreshToken,
